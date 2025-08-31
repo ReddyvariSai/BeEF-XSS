@@ -45,8 +45,29 @@ VirtualBox is a free and open-source virtualization tool to run our VMs.
 4. Boot up Kali Linux VM.
 
 > 💡 Fix sources with:
-```bash
+
 sudo nano /etc/apt/sources.list
 # Add:
 deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware
 sudo apt update && sudo apt full-upgrade -y
+# 🧪 Chapter 3: BeEF-XSS – Complete Guide
+
+## 🛠️ What is BeEF?
+BeEF (**Browser Exploitation Framework**) is a penetration testing tool that focuses on **client-side attacks** via web browsers.
+
+**XSS (Cross-Site Scripting)** allows attackers to inject malicious scripts into web pages.
+
+---
+
+## 🔍 Why Use BeEF-XSS?
+- ✅ Demonstrates **real-world XSS attack scenarios**  
+- ✅ Helps understand **browser exploitation & social engineering**  
+- ✅ Shows **why front-end security matters**  
+
+---
+
+## ⚙️ Installing BeEF on Kali Linux
+
+### Step 1: Check if Installed
+```bash
+beef-xss
