@@ -92,6 +92,8 @@ sudo apt update && sudo apt install beef-xss -y
 sudo nano /etc/beef-xss/config.yaml
 # Change username and password here
 ```
+
+
 ### Step 3: Start BeEF
 ```bash
 sudo service beef-xss start
@@ -109,6 +111,11 @@ Password: beef
 <img width="1542" height="1020" alt="Screenshot 2025-09-04 184403" src="https://github.com/user-attachments/assets/08a7624b-6b1a-4dd1-96b0-90554293d4e1" />
 
 ## Hooking a Browser
+
+<img width="1598" height="1018" alt="Screenshot 2025-09-05 102448" src="https://github.com/user-attachments/assets/10a6109a-4f97-4964-9c6f-82a54fa45233" />
+<img width="1068" height="811" alt="Screenshot 2025-09-05 102733" src="https://github.com/user-attachments/assets/190e4ff4-db78-48a3-af92-2b54be6c79e3" />
+<img width="1059" height="610" alt="Screenshot 2025-09-05 103440" src="https://github.com/user-attachments/assets/b7d7805d-5623-41eb-a334-fe710a9bba2e" />
+
 
 Inject this payload via an XSS vulnerability:
 ```bash
