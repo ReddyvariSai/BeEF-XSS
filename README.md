@@ -75,15 +75,19 @@ deb http://http.kali.org/kali kali-experimental main contrib non-free non-free-f
 deb http://http.kali.org/kali kali-bleeding-edge main contrib non-free non-free-firmware
 deb-src http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware
 ```
+
 <img width="1548" height="1016" alt="Screenshot 2025-09-04 184042" src="https://github.com/user-attachments/assets/b2a14f99-8acc-40ba-80e3-9002b5fa5851" />
 
 > Fix sources with:
+
+
 ```bash
 sudo nano /etc/apt/sources.list
 ```
 ### Add:
 
 deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware
+
 ```bash
 sudo apt update && sudo apt full-upgrade -y
 ```
@@ -107,6 +111,7 @@ BeEF (**Browser Exploitation Framework**) is a penetration testing tool that foc
 ## ⚙️ Installing BeEF on Kali Linux
 
 ### Step 1: Check if Install
+
 ```bash
 beef-xss
 ```
@@ -114,6 +119,7 @@ If it starts : you’re good! Jump to “Running BeEF”.
 If command not found, install it.
 Install it from the kali repository:
 Use /root command  in command prompt/Terminal 
+
 ```bash
 $ Sudo su
 ```
@@ -129,10 +135,12 @@ This installs the latest stable version of BeEF on Kali Linux.
 <img width="1324" height="712" alt="Screenshot 2025-09-04 184325" src="https://github.com/user-attachments/assets/70847c50-60ff-4c99-a644-a10a563e2d42" />
 
 If not found, install it:
+
 ```bash
 sudo apt update && sudo apt install beef-xss -y
 ```
 ### Step 2: Change Default Credentials
+
 ```bash
 sudo nano /etc/beef-xss/config.yaml
 # Change username and password here
@@ -178,9 +186,13 @@ If the command show the open tcp “3000”. to the use the 3000 to open the BeE
 Open fire fox to enter the localhost:3000  to show the Apache 2 Test page. To study the BeEF-XSS browser. And to open the BeEF-XSS to practices ethical hacking and
 penetration Testing  localhost:3000/ui/panel and listens for incoming browser connectins.
 To know the ip-configaration it’s most important to use the attacking and defence the attackers. 
+
+
 ```bash
 $ ifconfig
 ```
+
+
 <img width="426" height="204" alt="image" src="https://github.com/user-attachments/assets/72e7e0ae-6516-491a-9105-addf47fa55e3" />
 
 
