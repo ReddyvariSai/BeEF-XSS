@@ -46,3 +46,6 @@ Created materials suitable for developer training, red-team demos, and security 
 
 Notes / ethics
 Lab and demos are restricted to isolated environments. All tests used synthetic credentials and intentionally vulnerable targets. Do not apply these techniques outside authorized 
+
+
+![1758012702994](https://github.com/user-attachments/assets/faff3561-c9da-4239-86dd-5b123d7dc812)
