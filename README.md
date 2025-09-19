@@ -1,5 +1,5 @@
 
-# BeEF-XSS — Browser Exploitation Framework (Ethical Lab)
+# Web Application Hacking BeEF-XSS — Browser Exploitation Framework
 
 
 Date: Aug 2025 - Present. 
